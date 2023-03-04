@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Phudu", cursive;
+    font-weight: 400;
+}
+html{
+    height: 100vh;
+    background-color: #181a1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    overflow: hidden;
+}
+.todo {
+    position: relative;
+    top: 1rem;
+}
+
+#main{
+    margin-top: 1rem;
+    scrollbar-width: none;
+    overflow: scroll;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+}
+#emptydiv{
+    height: 3rem;
+    text-align: center;
+    color: white
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#main {
+    position: relative;
+    /* height: 100px; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#input,#submit1{
+    background-color: black;
+    color: white;
+    border: 0.5px solid white;
+}
+#input{
+    margin : 2px;
+    position: relative;
+    height: 3rem;
+    width: 60%;
+    border-radius: 20px;
+}
+.delbutton{
+    color: white;
+    width: 2rem;
+}
+.delbutton:hover{
+    color: red;
+    width: 2.5rem;
+}
+#submit1{
+    margin: 2px 0px 2px 1rem;
+    height: 3rem;
+    /* align-self: center; */
+    width: 5rem;
+}
+#submit1:hover{
+    background-color: lightseagreen;
+}
+#inputfield{
+    background-color: black;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+
+    margin-bottom: 10px;
+    display: flex;
+
+    justify-content: center;
+    
+}
+.sticky{
+    color: white;
+    position: sticky;
+    bottom: 0;
+}
+#time{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    height: 4rem;
+    border-radius: 30px;
+}
+#timer {
+    font-size: 2rem;
+}
+.tasks,.head{
+    text-align: center;
+    display: flex;
+    min-width: 300px;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+.head{
+    flex-direction: column;
+}
+
+.taskbar{
+    position: relative;
+}
+
+.progress {
+    width: 3rem;
+    height: 1.5rem;
+}
+.progress:hover{
+    background-color:green;
+}
+
+.tasks > div{
+    margin-left: 2px;
+}
+#createtask{
+    width: 4rem;
+    height: 1rem;
+}
+
+.Maintask{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    margin: 0px 0px 2px 1rem;
+    border-radius: 30px;
+    border : 1px solid black;
+    /* width: 100%; */
+    min-height: 3rem;
+    background-color:rgb(54, 198, 87);
+    animation: change1 1s linear;
+}
+.Maintask  p{
+    width: 80%;
+    text-align: start;
+}
+
+@media screen and (max-width: 600px) {
+    #main{
+        width: 90vw;
+    }
+    #time{
+        flex-direction: column;
+        height: 20%;
+    }
+}
+

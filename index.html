@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap">
+    <title>Todolist</title>
+</head>
+<body>
+    <div class="todo">
+        
+        <div id="time">
+            <header class="head">
+                <h1>Todolist</h1>
+                <div class="tasks">
+                    <div>Total 
+                        <div id="total">0</div>
+                    </div>
+                    <div>Completed 
+                        <div id="completed">0</div>
+                    </div>
+                    <div > Remaining 
+                        <div id="remaining">0</div>
+                    </div>
+
+                </div>
+            </header>
+            <!-- <input type="date" value="" id="datatime"></input> -->
+            <div id="timer">Current Timer</div>
+            
+            
+        </div>
+        <div id="main">
+            <form id="inputfield" >
+                <input  id="input" placeholder="Enter Your Tasks"></input>
+                <button id = "submit1"   type="submit">Add Task</button>
+            </form>
+            <div id="inside" class="taskbar">
+                <div id="newelements"></div>
+                <div id="completedelements"></div>
+                <div id ="emptydiv">Your at the end </div>
+            </div>            
+        </div>
+        <div class="sticky">This is sticky</div>
+    </div>
+
+</body>
+<script src="./todo.js"></script>
+</html>
